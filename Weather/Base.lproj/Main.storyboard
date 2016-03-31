@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="weathericons-regular-webfont.ttf">
+            <string>WeatherIcons-Regular</string>
+            <string>WeatherIcons-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image" translatesAutoresizingMaskIntoConstraints="NO" id="H1B-Xx-ygN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enj-7H-Ya5">
+                                <rect key="frame" x="20" y="161" width="560" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="A20-Kq-9CL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A20-Kq-9CL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="A20-Kq-9CL"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLT-5c-2ug">
+                                <rect key="frame" x="197" y="197" width="206" height="206"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="206" id="Jn7-Oy-Mnf"/>
+                                    <constraint firstAttribute="width" constant="206" id="gKw-XE-foV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="144"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpm-6M-p6T">
+                                <rect key="frame" x="20" y="427" width="560" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="3Qh-BH-Hkt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Qh-BH-Hkt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3Qh-BH-Hkt"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fpm-6M-p6T" firstAttribute="top" secondItem="yLT-5c-2ug" secondAttribute="bottom" constant="24" id="F1d-Cb-vjb"/>
+                            <constraint firstAttribute="trailing" secondItem="fpm-6M-p6T" secondAttribute="trailing" constant="20" id="FET-at-mGQ"/>
+                            <constraint firstItem="enj-7H-Ya5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="GCa-ST-Geo"/>
+                            <constraint firstItem="enj-7H-Ya5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GZu-Lj-SgY"/>
+                            <constraint firstItem="yLT-5c-2ug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ONr-EQ-ZkE"/>
+                            <constraint firstAttribute="trailing" secondItem="enj-7H-Ya5" secondAttribute="trailing" constant="20" id="Rpr-Ks-nGq"/>
+                            <constraint firstAttribute="trailing" secondItem="fpm-6M-p6T" secondAttribute="trailing" constant="20" id="S4F-BS-NpZ"/>
+                            <constraint firstItem="fpm-6M-p6T" firstAttribute="leading" secondItem="yLT-5c-2ug" secondAttribute="trailing" constant="8" id="TyW-Vr-tQP"/>
+                            <constraint firstItem="fpm-6M-p6T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="eIl-sh-7As"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H1B-Xx-ygN" secondAttribute="bottom" id="eQd-Cw-EO2"/>
+                            <constraint firstItem="yLT-5c-2ug" firstAttribute="leading" secondItem="enj-7H-Ya5" secondAttribute="trailing" constant="8" id="fKo-DW-tA7"/>
+                            <constraint firstItem="yLT-5c-2ug" firstAttribute="top" secondItem="enj-7H-Ya5" secondAttribute="bottom" constant="36" id="g2i-jr-wY5"/>
+                            <constraint firstItem="H1B-Xx-ygN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nic-mK-3iM"/>
+                            <constraint firstItem="enj-7H-Ya5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="qlf-2M-jmS"/>
+                            <constraint firstItem="H1B-Xx-ygN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qpj-em-Fxf"/>
+                            <constraint firstItem="fpm-6M-p6T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u6S-pL-feR"/>
+                            <constraint firstItem="yLT-5c-2ug" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uHg-HD-or2"/>
+                            <constraint firstAttribute="trailing" secondItem="H1B-Xx-ygN" secondAttribute="trailing" id="y1k-l8-LuP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GCa-ST-Geo"/>
+                                <exclude reference="GZu-Lj-SgY"/>
+                                <exclude reference="fKo-DW-tA7"/>
+                                <exclude reference="FET-at-mGQ"/>
+                                <exclude reference="TyW-Vr-tQP"/>
+                                <exclude reference="u6S-pL-feR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="GCa-ST-Geo"/>
+                                <include reference="GZu-Lj-SgY"/>
+                                <exclude reference="Rpr-Ks-nGq"/>
+                                <exclude reference="qlf-2M-jmS"/>
+                                <include reference="fKo-DW-tA7"/>
+                                <exclude reference="g2i-jr-wY5"/>
+                                <exclude reference="F1d-Cb-vjb"/>
+                                <include reference="FET-at-mGQ"/>
+                                <exclude reference="S4F-BS-NpZ"/>
+                                <include reference="TyW-Vr-tQP"/>
+                                <exclude reference="eIl-sh-7As"/>
+                                <include reference="u6S-pL-feR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="LocationLabel" destination="enj-7H-Ya5" id="7xi-XU-ryY"/>
+                        <outlet property="temperatureLabel" destination="fpm-6M-p6T" id="3b5-RF-kj7"/>
+                        <outlet property="weatherLabel" destination="yLT-5c-2ug" id="rK9-yh-DSM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.75" y="276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background image" width="1250" height="781"/>
+    </resources>
+</document>
