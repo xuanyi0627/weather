@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F79C9261CAD38B00053305C"
+               BlueprintIdentifier = "1348CAEC1D2E7ACA00F81B77"
                BuildableName = "Weather.app"
                BlueprintName = "Weather"
                ReferencedContainer = "container:Weather.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F79C9261CAD38B00053305C"
+            BlueprintIdentifier = "1348CAEC1D2E7ACA00F81B77"
             BuildableName = "Weather.app"
             BlueprintName = "Weather"
             ReferencedContainer = "container:Weather.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F79C9261CAD38B00053305C"
+            BlueprintIdentifier = "1348CAEC1D2E7ACA00F81B77"
             BuildableName = "Weather.app"
             BlueprintName = "Weather"
             ReferencedContainer = "container:Weather.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F79C9261CAD38B00053305C"
+            BlueprintIdentifier = "1348CAEC1D2E7ACA00F81B77"
             BuildableName = "Weather.app"
             BlueprintName = "Weather"
             ReferencedContainer = "container:Weather.xcodeproj">
